@@ -30,7 +30,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
-<a class="navbar-brand" href="Index.php">
+<a class="navbar-brand" href="../Index.php">
       <img src="../Imagenes/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       CuponeraSV
     </a>
