@@ -76,8 +76,8 @@ ADD
 INSERT INTO
     Usuarios (Nombres,Apellidos,Email,Usuario,Contrasena,DUI,Fecha_nacimiento,FK_rol)
 VALUES
-   ('Admin', 'Admin', 'Admin@admin.com','Admin','e64b78fc3bc91bcbc7dc232ba8ec59e0','00000000-0','2001-01-01',2),
-   ('Usuario', 'Usuario', 'Usuario@usuario.com','Usuario','4969a33cc7fbc3f308db13254617c2f3','11111111-1','2002-02-02',1);
+   ('Admin', 'Admin', 'Admin@admin.com','Admin','$2y$10$wCIpEB8KuXBoL0t4LsXl4OdUg9QuN3VU/I9fAJKrSMtAdJcP.diIW','00000000-0','2001-01-01',2),
+   ('Usuario', 'Usuario', 'Usuario@usuario.com','Usuario','$2y$10$lPifSWjXifXarQp71/FNLePyjWGcrrAvrqH3crgmAnTdhrGGP2cJ6','11111111-1','2002-02-02',1);
 
 
 
@@ -104,7 +104,7 @@ ADD
     INSERT INTO
     Empresas (Nombre,NIT,Direccion,Telefono,Email,Usuario,Contrasena,FK_estado_aprobacion,Comision)
 VALUES
-   ('Apple', '1111-111111-111-1','Cupertino', 22101587,'apple@apple.com','Apple','29aa7acafb73866d6571e1a72f46c146',1,5);
+   ('Apple', '1111-111111-111-1','Cupertino', 22101587,'apple@apple.com','Apple','$2y$10$VqgXhVT9UQefmT8yaJxr0eGmOpnb2U0AuCce39CQht9vVS9A21K7y',1,5);
    
 
 CREATE TABLE Cupones (

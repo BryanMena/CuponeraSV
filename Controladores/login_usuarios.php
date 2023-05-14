@@ -4,10 +4,11 @@ include_once('connection.php');
 
 if (isset($_POST['login'])) {
 
-    $usuario = $_POST['usuario'];
-    $contrasena = md5($_POST['contrasena']);
+    $usuarioForm = $_POST['usuario'];
+    $contrasenaForm = $_POST['contrasena'];
 
-    $sql = "SELECT * FROM `usuarios` WHERE `usuario`='$usuario' AND `contrasena`='$contrasena'";
+    $sql = "SELECT * FROM `usuarios` INNER JOIN `roles` ON `usuarios`.`FK_rol`=`roles`.`ID_rol` WHERE `usuario`='$usuarioForm'";
+    
     $result = mysqli_query($conn, $sql);
 
     if (empty($_POST['usuario']) && empty($_POST['contrasena'])) {
@@ -25,22 +26,36 @@ if (isset($_POST['login'])) {
     } else {
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_array($result);
-            $rol = $row['rol'];
-            $usuario= $row['usuario'];
-            $contrasena = $row['contrasena'];
+            $rol = $row['Rol'];
+            $usuario = $row['Usuario'];
+            $contrasena = $row['Contrasena'];   
 
-
-            if ($usuario == $usuario && $contrasena == $contrasena ) {
+            if ($usuario == $usuario && password_verify($contrasenaForm, $contrasena)) {
                 $_SESSION['usuario'] = $usuario;
-                $_SESSION['contrasena'] = $contrasena;
-                header('location:../vistas/Inicio_admin.php');
+                $_SESSION['rol'] = $rol;
+
+                if ($rol == 'Administrador') {
+                    echo "<script>alert('Bienvenido administrador $usuario')
+                    window.location.href='../vistas/Inicio_admin.php';</script>";
+                    exit;
+                }
+
+
+                echo "<script>alert('Bienvenido $usuario')
+                    window.location.href='../vistas/Inicio_usuario.php';</script>";
+
+
+                exit;
+            } else {
+                echo "<script>alert('Usuario o contraseña invalido');
+                window.location.href='../vistas/login_usuarios.php';</script>";
+                exit;
             }
         } else {
             echo "<script>alert('Usuario o contraseña invalido');
             window.location.href='../vistas/login_usuarios.php';</script>";
-           
+
             exit;
         }
     }
-
 }
