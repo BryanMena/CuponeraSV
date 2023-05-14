@@ -12,6 +12,7 @@ if (!isset($_SESSION['usuario'])) {
 
 <head>
   <title>Welcome Form</title>
+  <link rel="shortcut icon" type="image/png" href="../Imagenes/411714.png"/>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,54 +20,6 @@ if (!isset($_SESSION['usuario'])) {
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-  <style>
-    .container {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 15px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    }
-
-    .container span {
-      background-color: gold;
-      color: white;
-      padding: 15px;
-      margin: 10pxpx;
-      border-radius: 8px;
-      font-size: 25px;
-      font-weight: 600;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-    }
-
-    .container p {
-      margin: 20px;
-    }
-
-    .container .btn {
-      margin-top: -30px;
-      width: 250px;
-      background-color: blue;
-      color: white;
-      font-weight: 500;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      border-radius: 20px;
-    }
-
-    .container .btn:hover {
-      margin-top: -30px;
-      width: 300px;
-      background-color: blue;
-      font-weight: 500;
-      transition: 1s;
-      color: white;
-    }
-  </style>
 </head>
 
 <body>
@@ -74,14 +27,20 @@ if (!isset($_SESSION['usuario'])) {
 
 
 
-  <div class="container">
-    <h3>Bienvenido </span></h3>
-    <p>te has logueado como empresa</p>
-    <p></p>
-    <form method="POST" action="../Controladores/logout.php">
-      <input type="submit" value="Cerrar Sesión" class="btn">
+      <div class="align-self-center">
+      <h1 style="text-align:center">Bienvenido</h1>
+      <h2 style="text-align:center">te has logueado como empresa</h2>
+      <form method="POST" action="../Controladores/logout.php">
+      <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+      <input type="submit" value="Cerrar Sesión" class="btn btn-primary btn-lg text-light my-2 py-2" style="width:20% ; border-radius: 30px; font-weight:600;" style="border-radius:25px ;">
+      </div>
+    
     </form>
-  </div>
+    </div>
+    </div>
+ 
+
+  
 
 
 

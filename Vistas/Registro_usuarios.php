@@ -146,18 +146,13 @@
                     <i class="fa fa-calendar fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-calendar-date"></i> Fecha de nacimiento</label>
-                        <input type="text" id="datepicker" class="form-control form-control-lg py-2" name="Nacimiento" autocomplete="off" placeholder="Mes / Día / Año" style="border-radius:25px ;" />
+                        <input type="date" id="datepicker" class="form-control form-control-lg py-2" name="Nacimiento" autocomplete="off" placeholder="Mes / Día / Año" style="border-radius:25px ;" />
 
                       </div>
                     </div>
 
                
 
-    <script type="text/javascript">
-        $(function() {
-            $('#datepicker').datepicker();
-        });
-    </script>
 
 
 
