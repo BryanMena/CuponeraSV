@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
             $usuario = $row['Usuario'];
             $contrasena = $row['Contrasena'];   
 
-            if ($usuario == $usuario && password_verify($contrasenaForm, $contrasena)) {
+            if ($usuario == $usuarioForm && password_verify($contrasenaForm, $contrasena)) {
                 $_SESSION['usuario'] = $usuario;
                 $_SESSION['rol'] = $rol;
 
