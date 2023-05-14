@@ -7,7 +7,7 @@ session_destroy();
 
 // Redirigir a una página de inicio de sesión u otra página deseada
 echo "<script>alert('Sesión cerrada exitosamente');
-window.location.href='../vistas/login_empresas.php';</script>";
+window.location.href='../Index.php';</script>";
 exit();
 
 ?>

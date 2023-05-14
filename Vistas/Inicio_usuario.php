@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol'] != 'Administrador') {
+if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol'] != 'Usuario') {
   header("Location: Login_usuarios.php");
   exit;
 }
@@ -75,8 +75,8 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol']
 
 
   <div class="container">
-    <h3>Bienvenido Administrador</span></h3>
-    <p>te has logueado como administrador</p>
+    <h3>Bienvenido Usuario</span></h3>
+    <p>te has logueado como usuario</p>
     <p></p>
     <form method="POST" action="../Controladores/logout.php">
       <input type="submit" value="Cerrar Sesión" class="btn">
