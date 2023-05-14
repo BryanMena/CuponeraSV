@@ -83,7 +83,7 @@
                     </div>
 
           </form><br>
-          <p align="center">Si no tienes una cuenta <a href="Registro_empresas.php" class="text-primary" style="font-weight:600;text-decoration:none;">Resgistra tu empresa aquí</a></p>
+          <p align="center">Si no tienes una cuenta <a href="Registro_empresas.php" class="text-primary" style="font-weight:600;text-decoration:none;">Registra tu empresa aquí</a></p>
         </div>
       </div>
     </div>
