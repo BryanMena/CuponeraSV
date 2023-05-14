@@ -63,7 +63,7 @@
 
                   
 
-                  <form class="mx-1 mx-md-4" action="add.php" method="post">
+                  <form class="mx-1 mx-md-4" action="../Controladores/registro_empresas.php" method="post">
 
 
                    <!-- Nombre -->
@@ -71,7 +71,7 @@
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-shop"></i> Nombre de la empresa</label>
-                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="NombreEmpresa" autocomplete="off" placeholder="Ingresa el nombre de la empresa" style="border-radius:25px ;" />
+                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="nombre" autocomplete="off" placeholder="Ingresa el nombre de la empresa" style="border-radius:25px ;" />
 
                       </div>
                     </div>
@@ -81,7 +81,7 @@
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-shop-window"></i> NIT</label>
-                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="NIT" autocomplete="off" placeholder="Ingresa el NIT con guiones" style="border-radius:25px ;" />
+                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="nit" autocomplete="off" placeholder="Ingresa el NIT con guiones" style="border-radius:25px ;" />
 
                       </div>
                     </div>
@@ -92,7 +92,7 @@
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-telephone-fill"></i> Telefono de empresa</label>
-                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="TelefonoEmpresa" autocomplete="off" placeholder="Ingresa el telefono de la empresa" style="border-radius:25px ;" />
+                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="telefono" autocomplete="off" placeholder="Ingresa el telefono de la empresa" style="border-radius:25px ;" />
 
                       </div>
                     </div>
@@ -103,7 +103,7 @@
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-person-circle"></i> Usuario</label>
-                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="Usuario" autocomplete="off" placeholder="Ingresa el usuario que deseas " style="border-radius:25px ;" />
+                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-2" name="usuario" autocomplete="off" placeholder="Ingresa el usuario que deseas " style="border-radius:25px ;" />
 
                       </div>
                     </div>
@@ -114,7 +114,7 @@
                       <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example3c"><i class="bi bi-envelope-at-fill"></i> Email</label>
-                        <input type="email" id="form3Example3c" class="form-control form-control-lg py-2" name="Email" autocomplete="off" placeholder="Escribe el E-mail de la empresa" style="border-radius:25px ;" />
+                        <input type="email" id="form3Example3c" class="form-control form-control-lg py-2" name="email" autocomplete="off" placeholder="Escribe el E-mail de la empresa" style="border-radius:25px ;" />
 
                       </div>
                     </div>
@@ -125,7 +125,7 @@
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example4c"><i class="bi bi-chat-left-dots-fill"></i> Contraseña</label>
-                        <input type="password" id="form3Example4c" class="form-control form-control-lg py-2" name="Contraseña" autocomplete="off" placeholder="Escribe una contraseña" style="border-radius:25px ;" />
+                        <input type="password" id="form3Example4c" class="form-control form-control-lg py-2" name="contrasena" autocomplete="off" placeholder="Escribe una contraseña" style="border-radius:25px ;" />
                       </div>
                     </div>
 
