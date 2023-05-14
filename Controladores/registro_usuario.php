@@ -9,7 +9,7 @@ if(isset($_POST['registerUsuario']))
     $email=$_POST['Email'];
     $nacimiento=$_POST['Nacimiento'];
     $DUI=$_POST['DUI'];
-    $pass= password_hash($_POST['contrasena'], PASSWORD_DEFAULT);
+    $pass= password_hash($_POST['Contrasena'], PASSWORD_DEFAULT);
 
 //Validaciones
     if (empty($_POST['Nombres']) && empty($_POST['Apellidos']) && empty($_POST['Usuario'])

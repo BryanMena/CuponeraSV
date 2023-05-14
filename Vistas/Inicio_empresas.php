@@ -49,7 +49,7 @@ if (!isset($_SESSION['usuario'])) {
 
     .container .btn {
       margin-top: -30px;
-      width: 150px;
+      width: 250px;
       background-color: blue;
       color: white;
       font-weight: 500;
@@ -60,7 +60,7 @@ if (!isset($_SESSION['usuario'])) {
 
     .container .btn:hover {
       margin-top: -30px;
-      width: 200px;
+      width: 300px;
       background-color: blue;
       font-weight: 500;
       transition: 1s;
