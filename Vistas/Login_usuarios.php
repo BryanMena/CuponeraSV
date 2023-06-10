@@ -81,7 +81,7 @@
             </div>
 
           </form><br>
-          <p align="center">Si no tienes una cuenta <a href="Registro_usuarios.php" class="text-warning" style="font-weight:600;text-decoration:none;">Resgistrate aquí</a></p>
+          <p align="center">Si no tienes una cuenta <a href="Registro_usuarios.php" class="text-warning" style="font-weight:600;text-decoration:none;">Regístrate aquí</a></p>
         </div>
       </div>
     </div>
