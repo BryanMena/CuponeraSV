@@ -29,7 +29,7 @@ move_uploaded_file($archivo,$ruta);
 
     $result = mysqli_query($conn, $sql);
     if ($result) {
-        echo "<script>alert('Compañia registrada exitosamente');
+        echo "<script>alert('Cupon exitosamente');
         window.location.href='../vistas/Crear_cupon.php'; </script>";
         exit;
     } else {
