@@ -55,25 +55,23 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol']
                             $result = mysqli_query($conn, $sql);
                             while ($row = mysqli_fetch_array($result)) {
                                 echo "<tr>";
-                                echo "<td>" . $row['ID_empresa'] . "</td>";
-                                echo "<td>" . $row['Nombre'] . "</td>";
+                                echo "<td>" . "<input type='hidden' name='ID_empresa' value='" . $row['ID_empresa'] . "'>" . "</td>";
+                                echo "<td class='nombre-empresa'>" . $row['Nombre'] . "</td>";
 
                                 // Seleccionar los estados de aprobacion
                                 $sql = "SELECT * FROM `estado_aprobacion`";
                                 $result2 = mysqli_query($conn, $sql);
 
-                                // Imprimir el estado de aprobacion en un dropdown menu
-                                echo "<td>" . "<input type='hidden' name='ID_empresa' value='" . $row['ID_empresa'] . "'>
-                                <select name='FK_estado_aprobacion' class='form-select' aria-label='Default select example' style='width: 50%;'>";
+                                // Imprimir el estado de aprobacion en un dropdown menu, 
+                                echo "<td>" . "<select class='form-select' aria-label='Default select example' style='width: 50%; display: inline-grid;'>";
                                 while ($row2 = mysqli_fetch_array($result2)) {
                                     if ($row['Estado'] == $row2['Estado_aprobacion']) {
-                                        echo "<option selected>" . $row2['Estado_aprobacion'] . "</option>";
+                                        echo "<option value='" . $row2['ID_estado_aprobacion'] . "' selected>" . $row2['Estado_aprobacion'] . "</option>";
                                     } else {
-                                        echo "<option>" . $row2['Estado_aprobacion'] . "</option>";
+                                        echo "<option value='" . $row2['ID_estado_aprobacion'] . "'>" . $row2['Estado_aprobacion'] . "</option>";
                                     }
                                 }
-                                echo "</select>
-                                </td>";
+                                echo "</select>" . "</td>";
 
                                 // Impresion del porcentaje de comision
                                 echo "<td style='width: 20%;'>" . "<input type='text' name='Comision' value='" . $row['Comision']
@@ -86,8 +84,53 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol']
                     </table>
                 </div>
             </div>
+            <div class="row">
+                <div class="col" style="display:flex; justify-content:center;">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="actualizar()">Guardar cambios</button>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        function actualizar() {
+            var table = document.getElementsByTagName("table")[0];
+            var tbody = table.getElementsByTagName("tbody")[0];
+            var rows = tbody.getElementsByTagName("tr");
+            var data = [];
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var inputs = row.getElementsByTagName("input");
+                var nombre = row.getElementsByClassName("nombre-empresa")[0];
+                var select = row.getElementsByTagName("select")[0];
+                var row_data = {
+                    id_empresa: inputs[0].value,
+                    estado_aprobacion: select.value,
+                    comision: inputs[1].value,
+                    nombre: nombre.innerHTML
+                };
+                data.push(row_data);
+            }
+            var json = JSON.stringify(data);
+            console.log(json);
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "../Controladores/actualizar_panel.php", true);
+            xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+            xhr.onload = function() {
+                console.log(xhr.responseText);
+                // var users = JSON.parse(xhr.responseText);
+                if (xhr.readyState == 4 && xhr.status == "201") {
+                    // desplegar mensaje de exito en alerta y recargar la pagina
+                    alert("Datos actualizados correctamente");
+                    location.reload();
+                } else {
+                    // desplegar mensaje de error en alerta
+                    alert("Error al actualizar los datos");
+                }
+            }
+            xhr.send(json);
+        }
+    </script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
