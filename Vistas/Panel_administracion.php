@@ -23,9 +23,16 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol']
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Inicio_admin.php">
+                <img src="../Imagenes/411714.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Regresar
+            </a>
+        </div>
+    </nav>
 
     <div class="align-self-center">
-        <!-- Agregar espacio entre el inicio de pagina  para el titulo -->
         <br>
         <br>
         <h1 style="text-align:center">Panel de administración</h1>
