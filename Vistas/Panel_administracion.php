@@ -55,7 +55,7 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol']
                             $result = mysqli_query($conn, $sql);
                             while ($row = mysqli_fetch_array($result)) {
                                 echo "<tr>";
-                                echo "<td>" . "<input type='hidden' name='ID_empresa' value='" . $row['ID_empresa'] . "'>" . "</td>";
+                                echo "<td>" . "<input type='hidden' name='ID_empresa' value='" . $row['ID_empresa'] . "'>" . $row['ID_empresa'] . "</td>";
                                 echo "<td class='nombre-empresa'>" . $row['Nombre'] . "</td>";
 
                                 // Seleccionar los estados de aprobacion
