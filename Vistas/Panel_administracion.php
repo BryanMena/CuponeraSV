@@ -51,7 +51,6 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol']
                             empresas.Comision FROM `empresas` INNER JOIN `estado_aprobacion` 
                             ON empresas.FK_estado_aprobacion = estado_aprobacion.ID_estado_aprobacion";
 
-                            // $sql = "SELECT * FROM `empresas`";
                             $result = mysqli_query($conn, $sql);
                             while ($row = mysqli_fetch_array($result)) {
                                 echo "<tr>";
