@@ -31,7 +31,7 @@ if (isset($_POST['login'])) {
             if ($usuario == $usuarioForm && password_verify($contrasenaForm, $contrasena)) {
                 $_SESSION['usuario'] = $usuario;
                 echo "<script>alert('Bienvenido $usuario')
-                window.location.href='../vistas/Inicio_empresas.php';</script>";
+                window.location.href='../vistas/Crear_cupon.php';</script>";
                 exit;                
             } else {
                 echo "<script>alert('Usuario o contraseña invalido');
