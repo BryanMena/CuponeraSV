@@ -3,7 +3,7 @@
 
 <head>
   <title>crear cupón</title>
-  <link rel="shortcut icon" type="image/png" href="../Imagenes/411714.png"/>
+  <link rel="shortcut icon" type="image/png" href="../Imagenes/411714.png" />
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,39 +17,39 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-<div class="container-fluid">
-<a class="navbar-brand" href="../Index.php">
-      <img src="../Imagenes/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      CuponeraSV
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Comida</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Alojamiento</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Otros</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-      <a class="btn btn-warning" href="Login_usuarios.php" role="button">Usuarios</a>
-      <a class="btn btn-primary" href="Login_empresas.php" role="button">Empresas</a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Index.php">
+        <img src="../Imagenes/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        CuponeraSV
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Comida</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Alojamiento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../vistas/Comida.php">Otros</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <a class="btn btn-warning" href="Login_usuarios.php" role="button">Usuarios</a>
+            <a class="btn btn-primary" href="Login_empresas.php" role="button">Empresas</a>
+          </div>
+        </form>
       </div>
-      </form>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
   <section class="vh-100" style="background-color: #eee;">
@@ -59,15 +59,15 @@
           <div class="card text-black" style="border-radius: 25px;">
             <div class="card-body p-md-2">
               <div class="row justify-content-center">
-              <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-3 mt-3">Crear cupón</p>
+                <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-3 mt-3">Crear cupón</p>
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                  
+
 
                   <form class="mx-1 mx-md-4" action="../Controladores/Insertar_cupon.php" method="post">
 
 
-                   <!-- titulo -->
+                    <!-- titulo -->
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
@@ -87,8 +87,8 @@
                       </div>
                     </div>
 
-                     <!-- precio oferta-->
-                     <div class="d-flex flex-row align-items-center mb-4">
+                    <!-- precio oferta-->
+                    <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-ticket-perforated"></i>Precio oferta</label>
@@ -97,9 +97,9 @@
                       </div>
                     </div>
 
-                     <!-- Fecha inicio -->
-                     <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fa fa-calendar fa-lg me-3 fa-fw"></i>
+                    <!-- Fecha inicio -->
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fa fa-calendar fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-calendar-date"></i> Fecha inicio</label>
                         <input type="date" id="datepicker" class="form-control form-control-lg py-2" name="FechaI" autocomplete="off" placeholder="Mes / Día / Año" style="border-radius:25px ;" />
@@ -107,9 +107,9 @@
                       </div>
                     </div>
 
-                     <!-- Fecha fin -->
-                     <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fa fa-calendar fa-lg me-3 fa-fw"></i>
+                    <!-- Fecha fin -->
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fa fa-calendar fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-calendar-date"></i> Fecha final </label>
                         <input type="date" id="datepicker" class="form-control form-control-lg py-2" name="FechaF" autocomplete="off" placeholder="Mes / Día / Año" style="border-radius:25px ;" />
@@ -117,9 +117,9 @@
                       </div>
                     </div>
 
-                     <!-- Fecha limite -->
-                     <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fa fa-calendar fa-lg me-3 fa-fw"></i>
+                    <!-- Fecha limite -->
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fa fa-calendar fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-calendar-date"></i> Fecha limite de canje</label>
                         <input type="date" id="datepicker" class="form-control form-control-lg py-2" name="FechaL" autocomplete="off" placeholder="Mes / Día / Año" style="border-radius:25px ;" />
@@ -134,12 +134,12 @@
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example1c"><i class="bi bi-123"></i> Cantidad de cupones</label>
                         <select class="form-select" aria-label="Default select example" name="Cantidad">
-  
-                            <option value="5">5</option>
-                            <option value="10">10</option>
-                            <option value="15">15</option>
-                            <option value="25">25</option>
-                            </select>
+
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                          <option value="15">15</option>
+                          <option value="25">25</option>
+                        </select>
                       </div>
                     </div>
 
@@ -165,23 +165,23 @@
                       </div>
                     </div>
 
-                    
+
                     <!-- Categoria -->
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example4c"><i class="bi bi-chat-left-dots-fill"></i> Categoria</label>
                         <select class="form-select" aria-label="Default select example" name="Categoria">
-  
-                            <option value="1">Comida</option>
-                            <option value="2">Alojamiento</option>
-                            <option value="3">Servicios</option>
-                            <option value="4">Otros</option>
-                            </select>
-                         </div>
+
+                          <option value="1">Comida</option>
+                          <option value="2">Alojamiento</option>
+                          <option value="3">Servicios</option>
+                          <option value="4">Otros</option>
+                        </select>
+                      </div>
                     </div>
 
- 
+
 
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                       <input type="submit" value="Crear cupón" name="Rcupon" class="btn btn-warning btn-lg text-light my-2 py-2" style="width:100% ; border-radius: 30px; font-weight:600;" style="border-radius:25px ;" />
@@ -189,7 +189,7 @@
                     </div>
 
                   </form>
-                
+
 
                 </div>
               </div>

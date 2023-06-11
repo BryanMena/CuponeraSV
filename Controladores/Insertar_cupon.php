@@ -6,7 +6,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Obtener los datos del formulario
     $empresa = $_SESSION['ID_empresa'];
-    $titulo = $_POST['titulo']; 
+    $titulo = $_POST['titulo'];
     $precioR = $_POST['PrecioR'];
     $precioO = $_POST['PrecioO'];
     $fechaI = $_POST['FechaI'];
@@ -16,12 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $descripcion = $_POST['Descripcion'];
     $imagen = $_POST['Imagen'];
     $categoria = $_POST['Categoria'];
-    
-    $archivo = $_FILES['Imagen']['tmp_name'];
-$ruta ="../ImagenesCupones";
 
-$ruta =$ruta ."/".$imagen;
-move_uploaded_file($archivo,$ruta);
+    $archivo = $_FILES['Imagen']['tmp_name'];
+    $ruta = "../ImagenesCupones";
+
+    $ruta = $ruta . "/" . $imagen;
+    move_uploaded_file($archivo, $ruta);
 
     $sql = "INSERT INTO Cupones ( FK_empresa,Titulo_cupon,Precio_regular, Precio_oferta,Fecha_inicio_oferta, Fecha_fin_oferta, Fecha_limite_canje, 
     Cantidad_cupones, Descripcion,Imagen,FK_categoria,FK_estado_oferta) 
@@ -35,5 +35,4 @@ move_uploaded_file($archivo,$ruta);
     } else {
         die(mysqli_error($conn));
     }
-    }
-
+}
