@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario']) || !isset($_SESSION['ID_empresa'])) {
+  echo "<script>alert('Por favor inicie sesión');
+  window.location.href='../vistas/login_empresas.php';</script>";
+  exit;
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -64,7 +74,7 @@
 
 
 
-                  <form class="mx-1 mx-md-4" action="../Controladores/Insertar_cupon.php" method="post">
+                  <form class="mx-1 mx-md-4" action="../Controladores/Insertar_cupon.php" method="post" enctype="multipart/form-data">
 
 
                     <!-- titulo -->
@@ -160,7 +170,7 @@
                       <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="form3Example3c"><i class="bi bi-card-image"></i> Imagen</label>
-                        <input type="file" id="form3Example3c" class="form-control form-control-lg py-2" name="Imagen" autocomplete="off" placeholder="Escribe el E-mail de la empresa" style="border-radius:25px ;" />
+                        <input type="file" id="Imagen" class="form-control form-control-lg py-2" name="Imagen" autocomplete="off" placeholder="Escribe el E-mail de la empresa" style="border-radius:25px ;" />
 
                       </div>
                     </div>

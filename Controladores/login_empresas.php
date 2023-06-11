@@ -25,11 +25,13 @@ if (isset($_POST['login'])) {
     } else {
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_array($result);
+            $ID_empresa = $row['ID_empresa'];
             $usuario = $row['Usuario'];
             $contrasena = $row['Contrasena'];
 
             if ($usuario == $usuarioForm && password_verify($contrasenaForm, $contrasena)) {
                 $_SESSION['usuario'] = $usuario;
+                $_SESSION['ID_empresa'] = $ID_empresa;
                 echo "<script>alert('Bienvenido $usuario')
                 window.location.href='../vistas/Crear_cupon.php';</script>";
                 exit;                
