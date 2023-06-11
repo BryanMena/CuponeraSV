@@ -19,7 +19,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
-<a class="navbar-brand" href="../index.php">
+<a class="navbar-brand" href="../Index.php">
       <img src="../Imagenes/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       CuponeraSV
     </a>
@@ -29,27 +29,28 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Mantenimiento.php">Comida</a>
+          <a class="nav-link active" aria-current="page" href="Comida.php">Comida</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Mantenimiento.php">Alojamiento</a>
+          <a class="nav-link active" aria-current="page" href="Alojamiento.php">Alojamiento</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Mantenimiento.php">Servicios</a>
+          <a class="nav-link active" aria-current="page" href="Servicios.php">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Mantenimiento.php">Otros</a>
+          <a class="nav-link active" aria-current="page" href="Otros.php">Otros</a>
         </li>
       </ul>
       <form class="d-flex">
       <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-      <a class="btn btn-warning" href="../Vistas/Login_usuarios.php" role="button">Usuarios</a>
-      <a class="btn btn-primary" href="../Vistas/Login_empresas.php" role="button">Empresas</a>
+      <a class="btn btn-warning" href="Login_usuarios.php" role="button">Usuarios</a>
+      <a class="btn btn-primary" href="Login_empresas.php" role="button">Empresas</a>
       </div>
       </form>
     </div>
   </div>
 </nav>
+
 
 
   <section class="vh-100">

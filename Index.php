@@ -28,16 +28,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="vistas/Mantenimiento.php">Comida</a>
+          <a class="nav-link active" aria-current="page" href="vistas/Comida.php">Comida</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="vistas/Mantenimiento.php">Alojamiento</a>
+          <a class="nav-link active" aria-current="page" href="vistas/Alojamiento.php">Alojamiento</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="vistas/Mantenimiento.php">Servicios</a>
+          <a class="nav-link active" aria-current="page" href="vistas/Servicios.php">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="vistas/Mantenimiento.php">Otros</a>
+          <a class="nav-link active" aria-current="page" href="vistas/Otros.php">Otros</a>
         </li>
       </ul>
       <form class="d-flex">
