@@ -31,6 +31,7 @@ if (isset($_POST['login'])) {
             $contrasena = $row['Contrasena'];   
 
             if ($usuario == $usuarioForm && password_verify($contrasenaForm, $contrasena)) {
+                $_SESSION['ID_usuario'] = $row['ID_usuario'];
                 $_SESSION['usuario'] = $usuario;
                 $_SESSION['rol'] = $rol;
 
@@ -42,7 +43,7 @@ if (isset($_POST['login'])) {
 
 
                 echo "<script>alert('Bienvenido $usuario')
-                    window.location.href='../vistas/Inicio_usuario.php';</script>";
+                    window.location.href='../Index.php';</script>";
 
 
                 exit;
