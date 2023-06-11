@@ -25,12 +25,24 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['rol']) || $_SESSION['rol']
 <body>
 
   <div class="align-self-center">
+    <br>
     <h1 style="text-align:center">Bienvenido</h1>
+    <br>
     <h2 style="text-align:center">te has logueado como administrador</h2>
+
+    <br>
 
     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
       <a href="Panel_administracion.php" class="btn btn-info btn-lg text-light my-2 py-2" style="width:20% ; border-radius: 30px; font-weight:600;" style="border-radius:25px ;">Panel de administración</a>
     </div>
+
+    <br>
+
+    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+      <a href="Reportes.php" class="btn btn-info btn-lg text-light my-2 py-2" style="width:20% ; border-radius: 30px; font-weight:600;" style="border-radius:25px ;">Reportes</a>
+    </div>
+
+    <br>
 
     <form method="POST" action="../Controladores/logout.php">
       <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
