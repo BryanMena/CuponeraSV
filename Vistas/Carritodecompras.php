@@ -121,6 +121,11 @@ session_start();
     function eliminarCupon(id) {
       window.location.href = "../Controladores/eliminar_cupon.php?cupon_id=" + id;
     }
+
+    // funcion para pagar los cupones
+    function pagar() {
+      window.location.href = "../Controladores/pagar.php";
+    }
   </script>
 
   <!-- Bootstrap JavaScript Libraries -->

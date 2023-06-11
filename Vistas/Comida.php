@@ -46,7 +46,7 @@ session_start();
           </li>
         </ul>
 
-        <a class="nav-link active" style="margin-right: 20px; font-size:25px;" aria-current="page" href="Carrito.php"><i class="bi bi-cart4"></i></a>
+        <a class="nav-link active" style="margin-right: 20px; font-size:25px;" aria-current="page" href="Carritodecompras.php"><i class="bi bi-cart4"></i></a>
 
         <form class="d-flex">
           <div class="btn-group" role="group" aria-label="Basic mixed styles example">
